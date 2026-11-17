@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Monefold for iPhone handles your ledger, Apple Wallet imports, backups and support requests.">
+  <title>Monefold Privacy Policy</title>
+  <link rel="stylesheet" href="./pages.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="page-width" aria-label="Monefold pages">
+      <a href="./index.html">Support</a>
+      <a href="./privacy.html" aria-current="page">Privacy Policy</a>
+    </nav>
+  </header>
+  <main class="page-width">
+    <h1>Monefold Privacy Policy</h1>
+    <p>This policy covers Monefold 1.0 for iPhone and its support pages. Monefold is developed by Igor Golub. You can use the app without creating a Monefold account.</p>
+
+    <section>
+      <h2>Your financial records</h2>
+      <p>Monefold keeps your ledger in a database on your iPhone. It uses the account details, balances, transactions, categories and notes you enter to keep your records and calculate reports. The optional card fields accept a bank name, card network and the last four digits of a card.</p>
+    </section>
+
+    <section>
+      <h2>Apple Wallet and App Lock</h2>
+      <p>If you set up an Apple Wallet automation in Shortcuts, Monefold processes the payment information that you pass to the <strong>Import Wallet Payment</strong> action. This can include the amount and currency, merchant name and card information. The app records when it receives the event and keeps only the last four digits from card information it can recognize. It uses these details on your iPhone to match the payment to an account, prevent duplicates and suggest categories based on your previous choices. You can pause the import in Monefold or turn off the automation in Shortcuts.</p>
+      <p>Wallet alerts are generated on your iPhone. If you let Monefold show details in notifications, an alert may display a merchant name. You can change the preview settings in Monefold or manage notification permissions in iOS.</p>
+      <p>App Lock uses iOS device authentication through Face ID, Touch ID or your device passcode. iOS handles the authentication. Monefold receives the outcome of the check and stores your App Lock setting.</p>
+    </section>
+
+    <section>
+      <h2>Exchange rates</h2>
+      <p>For currency conversions, Monefold requests public exchange rates from Frankfurter. The request consists of currency codes and the date or date range needed for the rates. Frankfurter says that it operates the public API without retaining IP addresses or request URLs. Monefold caches the rates and calculates conversions on your iPhone. <a href="https://frankfurter.dev/#faq">Frankfurter API documentation</a></p>
+      <p>Monefold 1.0 is ad-free. The app uses the network for the exchange-rate requests described above.</p>
+    </section>
+
+    <section>
+      <h2>Backups and deletion</h2>
+      <p>Monefold keeps automatic backups on your iPhone and normally retains the three most recent automatic copies. It can also save a local copy before a database update. You can create a portable <code>.mfold</code> backup and choose where to save or share it. Anyone who can open the exported file can read its contents, including the ledger and any previously saved attachments it contains. If you save it in iCloud Drive or another storage service, that service handles the copy according to your settings. iOS may also include the app's ledger in a device backup under your system settings. <a href="https://support.apple.com/en-us/108770">What iCloud Backup includes</a></p>
+      <p><strong>Settings → Data → Reset local data</strong> clears the active ledger and its preferences from Monefold. Saved backups stay available after a reset. To also remove the app's local copies, use <strong>Delete App</strong> in iOS. Manage copies saved to Files, another service or an iOS device backup separately.</p>
+    </section>
+
+    <section>
+      <h2>Support and beta feedback</h2>
+      <p>If you email Monefold support, we receive your email address, message and any files you send. We use this information to respond, follow up and investigate the issue. We keep the correspondence for as long as needed for those purposes or as required by law. Our support mailbox uses Gmail. If you send beta feedback through TestFlight, Apple may share your comments, screenshots and crash information with us. <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a> · <a href="https://developer.apple.com/help/app-store-connect/test-a-beta-version/view-tester-feedback/">Apple TestFlight feedback</a></p>
+      <p>For a privacy question or to request access to or deletion of information you sent us, email <a href="mailto:ig.service.developer@gmail.com">ig.service.developer@gmail.com</a>.</p>
+    </section>
+
+    <section>
+      <h2>Support site hosting</h2>
+      <p>GitHub Pages hosts the Monefold support site. GitHub records visitors' IP addresses for security when they open these pages. <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages data collection</a></p>
+    </section>
+  </main>
+</body>
+</html>
