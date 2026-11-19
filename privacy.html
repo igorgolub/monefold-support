@@ -25,7 +25,8 @@
 
     <section>
       <h2>Apple Wallet and App Lock</h2>
-      <p>If you set up an Apple Wallet automation in Shortcuts, Monefold processes the payment information that you pass to the <strong>Import Wallet Payment</strong> action. This can include the amount and currency, merchant name and card information. The app records when it receives the event and keeps only the last four digits from card information it can recognize. It uses these details on your iPhone to match the payment to an account, prevent duplicates and suggest categories based on your previous choices. You can pause the import in Monefold or turn off the automation in Shortcuts.</p>
+      <p>If you set up an Apple Wallet automation in Shortcuts, Monefold processes the payment information that you pass to the <strong>Import Wallet Payment</strong> action. This can include the amount, currency, merchant name and card details. The app records when it receives the event and may keep a short Wallet card label or a recognized four-digit ending. You can link a label to an account and manage the link in Apple Wallet settings in Monefold. These links are stored on your iPhone. Monefold uses import details to match payments to accounts, help prevent duplicates and suggest categories. You can pause the import in Monefold or turn off the automation in Shortcuts.</p>
+      <p>Monefold learns categories on your iPhone. A portable backup can include your saved choices and a hashed merchant matching key. It excludes the original incoming Wallet events.</p>
       <p>Wallet alerts are generated on your iPhone. If you let Monefold show details in notifications, an alert may display a merchant name. You can change the preview settings in Monefold or manage notification permissions in iOS.</p>
       <p>App Lock uses iOS device authentication through Face ID, Touch ID or your device passcode. iOS handles the authentication. Monefold receives the outcome of the check and stores your App Lock setting.</p>
     </section>
@@ -33,11 +34,12 @@
     <section>
       <h2>Exchange rates</h2>
       <p>For currency conversions, Monefold requests public exchange rates from Frankfurter. The request consists of currency codes and the date or date range needed for the rates. Frankfurter says that it operates the public API without retaining IP addresses or request URLs. Monefold caches the rates and calculates conversions on your iPhone. <a href="https://frankfurter.dev/#faq">Frankfurter API documentation</a></p>
-      <p>Monefold 1.0 is ad-free. The app uses the network for the exchange-rate requests described above.</p>
+      <p>Monefold 1.0 is ad-free. When you open Privacy Policy in Settings, your browser loads the public page on GitHub Pages.</p>
     </section>
 
     <section>
       <h2>Backups and deletion</h2>
+      <p>Your ledger and Wallet activity remain on the device as part of your local records. You can delete individual ledger operations or clear the local ledger from Settings. Resetting the ledger also clears the local Wallet activity, card links and category learning.</p>
       <p>Monefold keeps automatic backups on your iPhone and normally retains the three most recent automatic copies. It can also save a local copy before a database update. You can create a portable <code>.mfold</code> backup and choose where to save or share it. Anyone who can open the exported file can read its contents, including the ledger and any previously saved attachments it contains. If you save it in iCloud Drive or another storage service, that service handles the copy according to your settings. iOS may also include the app's ledger in a device backup under your system settings. <a href="https://support.apple.com/en-us/108770">What iCloud Backup includes</a></p>
       <p><strong>Settings → Data → Reset local data</strong> clears the active ledger and its preferences from Monefold. Saved backups stay available after a reset. To also remove the app's local copies, use <strong>Delete App</strong> in iOS. Manage copies saved to Files, another service or an iOS device backup separately.</p>
     </section>
